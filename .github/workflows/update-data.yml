@@ -1,0 +1,53 @@
+name: Update market data
+
+on:
+  schedule:
+    # GitHub Actions의 cron은 부하가 많을 때 몇 분씩 지연될 수 있습니다 (공식적으로 보장되지 않음).
+    - cron: "* * * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: market-dashboard-collect
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # KIS 접근토큰은 발급 빈도 제한이 있어, 런(run) 사이에 캐시로 재사용합니다.
+      - name: Restore KIS token cache
+        uses: actions/cache@v4
+        with:
+          path: .kis-token-cache.json
+          key: kis-token-${{ github.run_id }}
+          restore-keys: |
+            kis-token-
+
+      - name: Collect data
+        env:
+          KIS_APP_KEY: ${{ secrets.KIS_APP_KEY }}
+          KIS_APP_SECRET: ${{ secrets.KIS_APP_SECRET }}
+          KIS_IS_PAPER: ${{ vars.KIS_IS_PAPER || 'false' }}
+        run: node scripts/collect.js
+
+      - name: Save KIS token cache
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .kis-token-cache.json
+          key: kis-token-${{ github.run_id }}
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "market-dashboard-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/data
+          git diff --cached --quiet || git commit -m "chore: update market data [skip ci]"
+          git pull --rebase --autostash
+          git push
