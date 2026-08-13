@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T15:58:24.761Z",
+  "updatedAt": "2026-08-13T16:40:03.926Z",
   "supply": {
     "kospi": {
       "individual": {
@@ -140,20 +140,12 @@
     ]
   },
   "indices": {
-    "kospi": {
-      "value": 6813.34,
-      "change": 234.3,
-      "changeRate": 3.56
-    },
-    "kosdaq": {
-      "value": 861.37,
-      "change": 2.46,
-      "changeRate": 0.29
-    },
+    "kospi": null,
+    "kosdaq": null,
     "kospi200Night": {
-      "value": 1091.9,
-      "change": 18.2,
-      "changeRate": 1.7
+      "value": 1097.7,
+      "change": 24,
+      "changeRate": 2.24
     },
     "nikkei225": {
       "price": 68308.59,
@@ -162,84 +154,88 @@
       "changeRate": 1.1618525307868024
     },
     "nasdaq100Futures": {
-      "price": 30139,
+      "price": 30186.5,
       "prevClose": 29853.25,
-      "change": 285.75,
-      "changeRate": 0.9571822163416044
+      "change": 333.25,
+      "changeRate": 1.1162938708515824
     },
     "sp500Futures": {
-      "price": 7803.5,
+      "price": 7809.25,
       "prevClose": 7770.5,
-      "change": 33,
-      "changeRate": 0.4246830963258477
+      "change": 38.75,
+      "changeRate": 0.49868090856444247
     },
     "philadelphiaSemi": {
-      "price": 12574.679,
+      "price": 12635.019,
       "prevClose": 12399.376,
-      "change": 175.30299999999988,
-      "changeRate": 1.4138050172847398
+      "change": 235.64300000000003,
+      "changeRate": 1.900442409359955
     }
   },
   "rates": {
     "krTreasury3y": null,
-    "krTreasury10y": null,
+    "krTreasury10y": {
+      "value": null,
+      "change": 3,
+      "changeRate": 0
+    },
     "usTreasury10y": {
-      "price": 0.46369999999999995,
+      "price": 0.4641,
       "prevClose": 0.46820000000000006,
-      "change": -0.004500000000000082,
-      "changeRate": -0.961127723195233
+      "change": -0.004100000000000037,
+      "changeRate": -0.8756941478000932
     },
     "usTreasury30y": {
-      "price": 0.5206999999999999,
+      "price": 0.5208,
       "prevClose": 0.5246999999999999,
-      "change": -0.0040000000000000036,
-      "changeRate": -0.7623403849818952
+      "change": -0.0038999999999999703,
+      "changeRate": -0.7432818753573414
     }
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4427,
+      "price": 4418.7,
       "prevClose": 4467.5,
-      "change": -40.5,
-      "changeRate": -0.906547285954113
+      "change": -48.80000000000018,
+      "changeRate": -1.092333519865701
     },
     "silver": {
-      "price": 64.935,
+      "price": 64.835,
       "prevClose": 65.7,
-      "change": -0.7650000000000006,
-      "changeRate": -1.1643835616438363
+      "change": -0.8650000000000091,
+      "changeRate": -1.3165905631659194
     },
     "wti": {
-      "price": 82.37,
+      "price": 82.32,
       "prevClose": 83.27,
-      "change": -0.8999999999999915,
-      "changeRate": -1.0808214242824445
+      "change": -0.9500000000000028,
+      "changeRate": -1.1408670589648169
     },
     "brent": {
-      "price": 88.08,
+      "price": 88.07,
       "prevClose": 88.98,
-      "change": -0.9000000000000057,
-      "changeRate": -1.0114632501685836
+      "change": -0.9100000000000108,
+      "changeRate": -1.0227017307260178
     },
     "dxy": {
-      "price": 99.904,
+      "price": 99.97,
       "prevClose": 100.014,
-      "change": -0.10999999999999943,
-      "changeRate": -0.10998460215569762
+      "change": -0.04399999999999693,
+      "changeRate": -0.043993840862276215
     },
     "usdkrw": {
-      "price": 1417.77,
+      "price": 1418.39,
       "prevClose": 1416.79,
-      "change": 0.9800000000000182,
-      "changeRate": 0.06917044869035059
+      "change": 1.6000000000001364,
+      "changeRate": 0.11293134480057994
     }
   },
   "volatilityCrypto": {
     "vix": {
-      "price": 14.7,
+      "price": 14.72,
       "prevClose": 14.55,
-      "change": 0.14999999999999858,
-      "changeRate": 1.0309278350515367
+      "change": 0.16999999999999993,
+      "changeRate": 1.1683848797250853
     },
     "btc": null,
     "eth": null
