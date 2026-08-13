@@ -1,0 +1,14 @@
+{
+  "name": "market-dashboard",
+  "version": "1.0.0",
+  "description": "국내외 시장 지표를 한눈에 보는 단일페이지 대시보드",
+  "type": "module",
+  "scripts": {
+    "collect": "node scripts/collect.js",
+    "dev": "npx serve public"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
