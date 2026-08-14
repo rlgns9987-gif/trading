@@ -66,7 +66,7 @@ async function getAccessToken() {
 
 // KIS API는 초당 호출 건수 제한이 있어, 여러 함수가 동시에 호출돼도
 // 실제 HTTP 요청은 최소 300ms 간격을 두고 순차적으로 나가도록 스로틀링합니다.
-const MIN_CALL_INTERVAL_MS = 300;
+const MIN_CALL_INTERVAL_MS = 1000;
 let lastCallAt = 0;
 let throttleChain = Promise.resolve();
 
