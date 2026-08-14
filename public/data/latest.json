@@ -1,66 +1,160 @@
 {
-  "updatedAt": "2026-08-14T15:53:54.820Z",
+  "updatedAt": "2026-08-14T15:54:40.374Z",
   "supply": {
     "kospi": {
       "individual": {
-        "netBuy": null,
+        "netBuy": -1982030,
         "vsYesterday": -2741033,
         "vs20dAvg": -2741033
       },
       "institution": {
-        "netBuy": null,
+        "netBuy": -1029823,
         "vsYesterday": 683411,
         "vs20dAvg": 683411
       },
       "foreign": {
-        "netBuy": null,
+        "netBuy": 3038711,
         "vsYesterday": 2110210,
         "vs20dAvg": 2110210
       }
     },
     "kosdaq": {
       "individual": {
-        "netBuy": null,
+        "netBuy": 314486,
         "vsYesterday": null,
         "vs20dAvg": null
       },
       "institution": {
-        "netBuy": null,
+        "netBuy": -252423,
         "vsYesterday": null,
         "vs20dAvg": null
       },
       "foreign": {
-        "netBuy": null,
+        "netBuy": -65863,
         "vsYesterday": null,
         "vs20dAvg": null
       }
     },
     "futures": {
       "individual": {
-        "netBuy": null,
+        "netBuy": -26029,
         "vsYesterday": 77463,
         "vs20dAvg": 77463
       },
       "institution": {
-        "netBuy": null,
+        "netBuy": 316793,
         "vsYesterday": 62241,
         "vs20dAvg": 62241
       },
       "foreign": {
-        "netBuy": null,
+        "netBuy": -310139,
         "vsYesterday": -128623,
         "vs20dAvg": -128623
       }
     }
   },
   "topValue": {
-    "kospi": [],
-    "kosdaq": []
+    "kospi": [
+      {
+        "name": "SK하이닉스",
+        "price": 1645000,
+        "changeRate": 3.26,
+        "tradingValue": 7489699281000,
+        "vsYesterday": 9517753428321,
+        "vs20dAvg": 9517753428321
+      },
+      {
+        "name": "삼성전자",
+        "price": 274500,
+        "changeRate": 2.43,
+        "tradingValue": 5874450961500,
+        "vsYesterday": 7514884503000,
+        "vs20dAvg": 7514884503000
+      },
+      {
+        "name": "삼성전기",
+        "price": 1558000,
+        "changeRate": 3.66,
+        "tradingValue": 1504282797000,
+        "vsYesterday": 1739303636500,
+        "vs20dAvg": 1739303636500
+      },
+      {
+        "name": "SK스퀘어",
+        "price": 1154000,
+        "changeRate": 3.31,
+        "tradingValue": 759169507500,
+        "vsYesterday": 1055446472543,
+        "vs20dAvg": 1055446472543
+      },
+      {
+        "name": "삼성전자우",
+        "price": 195600,
+        "changeRate": 4.15,
+        "tradingValue": 744107274500,
+        "vsYesterday": 869724393000,
+        "vs20dAvg": 869724393000
+      }
+    ],
+    "kosdaq": [
+      {
+        "name": "제주반도체",
+        "price": 81500,
+        "changeRate": -7.7,
+        "tradingValue": 351086523350,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "현대무벡스",
+        "price": 28000,
+        "changeRate": 10.67,
+        "tradingValue": 280309158800,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "한라캐스트",
+        "price": 12590,
+        "changeRate": 16.25,
+        "tradingValue": 235891718505,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "주성엔지니어링",
+        "price": 177800,
+        "changeRate": -0.84,
+        "tradingValue": 225427761800,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "케이앤에스아이앤씨",
+        "price": 14860,
+        "changeRate": -3.38,
+        "tradingValue": 182279066920,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      }
+    ]
   },
   "indices": {
-    "kospi": null,
-    "kosdaq": null,
-    "kospi200Night": null,
+    "kospi": {
+      "value": 6977.94,
+      "change": 164.6,
+      "changeRate": 2.42
+    },
+    "kosdaq": {
+      "value": 864.65,
+      "change": 3.28,
+      "changeRate": 0.38
+    },
+    "kospi200Night": {
+      "value": 1089.35,
+      "change": -9.55,
+      "changeRate": -0.87
+    },
     "nikkei225": {
       "price": 68713.8,
       "prevClose": 68308.59,
@@ -68,70 +162,70 @@
       "changeRate": 0.5932050420013155
     },
     "nasdaq100Futures": {
-      "price": 30037,
+      "price": 30044.75,
       "prevClose": 30188.5,
-      "change": -151.5,
-      "changeRate": -0.5018467297149577
+      "change": -143.75,
+      "changeRate": -0.47617470228729486
     },
     "sp500Futures": {
-      "price": 7800.75,
+      "price": 7802.25,
       "prevClose": 7822.5,
-      "change": -21.75,
-      "changeRate": -0.2780441035474593
+      "change": -20.25,
+      "changeRate": -0.2588686481303931
     },
     "philadelphiaSemi": {
-      "price": 12294.396,
+      "price": 12299.779,
       "prevClose": 12455.998,
-      "change": -161.60199999999895,
-      "changeRate": -1.2973829957262273
+      "change": -156.21899999999914,
+      "changeRate": -1.2541668680422007
     }
   },
   "rates": {
     "krTreasury3y": null,
     "krTreasury10y": null,
     "usTreasury10y": {
-      "price": 0.46840000000000004,
+      "price": 0.4688,
       "prevClose": 0.4641,
-      "change": 0.004300000000000015,
-      "changeRate": 0.9265244559362238
+      "change": 0.004699999999999971,
+      "changeRate": 1.0127127774186535
     },
     "usTreasury30y": {
-      "price": 0.5267999999999999,
+      "price": 0.5269,
       "prevClose": 0.52130003,
-      "change": 0.0054999699999999764,
-      "changeRate": 1.055048855454694
+      "change": 0.00559997000000001,
+      "changeRate": 1.074231666551028
     }
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4445.3,
+      "price": 4445.9,
       "prevClose": 4420.4,
-      "change": 24.900000000000546,
-      "changeRate": 0.563297439145791
+      "change": 25.5,
+      "changeRate": 0.5768708714143517
     },
     "silver": {
-      "price": 65.195,
+      "price": 65.21,
       "prevClose": 64.993,
-      "change": 0.20199999999999818,
-      "changeRate": 0.310802701829425
+      "change": 0.21699999999999875,
+      "changeRate": 0.3338821103811161
     },
     "wti": {
-      "price": 81.58,
+      "price": 81.57,
       "prevClose": 81.25,
-      "change": 0.3299999999999983,
-      "changeRate": 0.40615384615384403
+      "change": 0.3199999999999932,
+      "changeRate": 0.3938461538461454
     },
     "brent": {
-      "price": 87.82,
+      "price": 87.75,
       "prevClose": 87.07,
-      "change": 0.75,
-      "changeRate": 0.8613759044446997
+      "change": 0.6800000000000068,
+      "changeRate": 0.780980820029869
     },
     "dxy": {
-      "price": 99.54,
+      "price": 99.537,
       "prevClose": 99.964,
-      "change": -0.4239999999999924,
-      "changeRate": -0.4241526949701816
+      "change": -0.4269999999999925,
+      "changeRate": -0.4271537753591218
     },
     "usdkrw": {
       "price": 1413.68,
@@ -148,12 +242,12 @@
       "changeRate": -0.13670539986330382
     },
     "btc": {
-      "price": 62903,
-      "changeRate": -1.091539596973187
+      "price": 62906,
+      "changeRate": -1.0378897736202488
     },
     "eth": {
-      "price": 1880.09,
-      "changeRate": -0.35303162933063514
+      "price": 1880.15,
+      "changeRate": -0.3031516422817249
     }
   }
 }
