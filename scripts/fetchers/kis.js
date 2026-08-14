@@ -230,8 +230,15 @@ export async function getKrTreasuryYield(tenor) {
   const o = (data.output2 || []).find((row) => row.bcdt_code === bcdtCode);
   if (!o) throw new Error(`금리 데이터에서 ${tenor}(${bcdtCode})를 찾지 못했습니다.`);
 
+  const value = Number(o.bond_mnrt_prpr);
+  // KIS가 간헐적으로 국채 데이터 필드를 밀려서 주는 경우가 있어(예: 11:30 신규갱신 전),
+  // prpr이 숫자로 안 읽히면 나머지 필드도 신뢰할 수 없으므로 실패로 처리합니다.
+  if (Number.isNaN(value)) {
+    throw new Error(`금리 데이터 형식이 비정상입니다 (${tenor}): prpr="${o.bond_mnrt_prpr}"`);
+  }
+
   return {
-    value: Number(o.bond_mnrt_prpr),
+    value,
     change: Number(o.bond_mnrt_prdy_vrss),
     changeRate: Number(o.bstp_nmix_prdy_ctrt),
   };
