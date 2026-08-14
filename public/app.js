@@ -71,8 +71,8 @@ function stockItem(stock) {
       <span class="value ${cls}">${fmtNum(stock.price, 0)} (${fmtSigned(stock.changeRate, 2, "%")})</span>
     </div>
     <div class="meta">
-      <span>거래대금 ${fmtNum(stock.tradingValue, 0)}</span>
-      <span>전일比 ${fmtSigned(stock.vsYesterday, 0)} · 20일比 ${fmtSigned(stock.vs20dAvg, 0)}</span>
+      <span>거래대금 ${fmtNum(stock.tradingValue / 100_000_000, 1)}억</span>
+      <span>전일比 ${fmtSigned(stock.vsYesterday / 100_000_000, 1)}억 · 20일比 ${fmtSigned(stock.vs20dAvg / 100_000_000, 1)}억</span>
     </div>
   </div>`;
 }

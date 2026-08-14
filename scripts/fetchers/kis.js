@@ -64,10 +64,28 @@ async function getAccessToken() {
   return data.access_token;
 }
 
+// KIS API는 초당 호출 건수 제한이 있어, 여러 함수가 동시에 호출돼도
+// 실제 HTTP 요청은 최소 300ms 간격을 두고 순차적으로 나가도록 스로틀링합니다.
+const MIN_CALL_INTERVAL_MS = 300;
+let lastCallAt = 0;
+let throttleChain = Promise.resolve();
+
+function throttle() {
+  const result = throttleChain.then(async () => {
+    const wait = lastCallAt + MIN_CALL_INTERVAL_MS - Date.now();
+    if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
+    lastCallAt = Date.now();
+  });
+  throttleChain = result.catch(() => {});
+  return result;
+}
+
 async function kisGet(pathname, trId, params) {
   const token = await getAccessToken();
   const url = new URL(DOMAIN + pathname);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
+
+  await throttle();
 
   const res = await fetch(url, {
     headers: {
