@@ -222,6 +222,7 @@ export async function getKrTreasuryYield(tenor) {
 
   const o = (data.output2 || []).find((row) => row.bcdt_code === bcdtCode);
   if (!o) throw new Error(`금리 데이터에서 ${tenor}(${bcdtCode})를 찾지 못했습니다.`);
+  console.log(`[debug] 국채 ${tenor} 원본 응답:`, JSON.stringify(o));
 
   return {
     value: Number(o.bond_mnrt_prpr),
