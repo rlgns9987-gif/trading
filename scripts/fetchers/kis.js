@@ -1,11 +1,5 @@
 // scripts/fetchers/kis.js
 // 한국투자증권(KIS Developers) API 연동 모듈
-//
-// ⚠️ 중요: 아래 TR_ID 중 일부는 KIS Developers 포털(apiportal.koreainvestment.com)의
-// "국내주식 > 시세/순위분석" 문서에서 반드시 재확인 후 채워 넣으셔야 합니다.
-// 확실하게 검증된 항목(토큰 발급, 현재가 시세, 지수 시세)은 바로 동작하지만,
-// 시장별 수급(투자자매매동향)과 거래대금 상위 종목, 국내선물/채권 API는
-// TR_ID와 파라미터가 계정/문서 버전에 따라 달라질 수 있어 TODO로 표시해두었습니다.
 
 import fs from "fs";
 import path from "path";
@@ -22,15 +16,11 @@ const TOKEN_CACHE_PATH = path.resolve(".kis-token-cache.json");
 
 // ---------------------------------------------------------------------------
 // 1. 인증 토큰 발급/캐싱
-//    KIS는 토큰을 짧은 주기로 재발급하면 제한이 걸릴 수 있어(1일 1회 권장),
-//    GitHub Actions의 actions/cache로 .kis-token-cache.json 파일을 런(run) 간에
-//    재사용하도록 워크플로우(update-data.yml)에서 캐시 처리합니다.
 // ---------------------------------------------------------------------------
 async function getAccessToken() {
   if (fs.existsSync(TOKEN_CACHE_PATH)) {
     try {
       const cached = JSON.parse(fs.readFileSync(TOKEN_CACHE_PATH, "utf-8"));
-      // 만료 10분 전까지는 캐시된 토큰 재사용
       if (cached.expiresAt && Date.now() < cached.expiresAt - 10 * 60 * 1000) {
         return cached.accessToken;
       }
@@ -65,8 +55,8 @@ async function getAccessToken() {
 }
 
 // KIS API는 초당 호출 건수 제한이 있어, 여러 함수가 동시에 호출돼도
-// 실제 HTTP 요청은 최소 300ms 간격을 두고 순차적으로 나가도록 스로틀링합니다.
-const MIN_CALL_INTERVAL_MS = 1000;
+// 실제 HTTP 요청은 최소 2000ms 간격을 두고 순차적으로 나가도록 스로틀링합니다.
+const MIN_CALL_INTERVAL_MS = 2000;
 let lastCallAt = 0;
 let throttleChain = Promise.resolve();
 
@@ -80,7 +70,7 @@ function throttle() {
   return result;
 }
 
-async function kisGet(pathname, trId, params) {
+async function kisGet(pathname, trId, params, isRetry = false) {
   const token = await getAccessToken();
   const url = new URL(DOMAIN + pathname);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
@@ -98,14 +88,20 @@ async function kisGet(pathname, trId, params) {
   });
 
   if (!res.ok) {
-    throw new Error(`KIS API 호출 실패 (${trId}): ${res.status} ${await res.text()}`);
+    const bodyText = await res.text();
+    // 초당 거래건수 초과(EGW00201)는 순간적으로 튀는 제한이라, 조금 더 쉬었다가 한 번만 재시도합니다.
+    if (!isRetry && bodyText.includes("EGW00201")) {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      return kisGet(pathname, trId, params, true);
+    }
+    throw new Error(`KIS API 호출 실패 (${trId}): ${res.status} ${bodyText}`);
   }
 
   return res.json();
 }
 
 // ---------------------------------------------------------------------------
-// 2. 국내 지수 시세 (검증됨) — 코스피 0001 / 코스닥 1001 / 코스피200 2001
+// 2. 국내 지수 시세 — 코스피 0001 / 코스닥 1001 / 코스피200 2001
 // ---------------------------------------------------------------------------
 export async function getIndexPrice(indexCode) {
   const data = await kisGet(
@@ -122,7 +118,7 @@ export async function getIndexPrice(indexCode) {
 }
 
 // ---------------------------------------------------------------------------
-// 3. 개별 종목 현재가 (검증됨)
+// 3. 개별 종목 현재가
 // ---------------------------------------------------------------------------
 export async function getStockPrice(code) {
   const data = await kisGet(
@@ -140,7 +136,7 @@ export async function getStockPrice(code) {
 }
 
 // ---------------------------------------------------------------------------
-// 4. 시장별 투자자매매동향 (코스피/코스닥/선물 수급: 개인·기관·외국인 순매수) — 완성됨
+// 4. 시장별 투자자매매동향 (코스피/코스닥/선물 수급: 개인·기관·외국인 순매수)
 //    TR_ID: FHPTJ04030000 / URL: /uapi/domestic-stock/v1/quotations/inquire-investor-time-by-market
 // ---------------------------------------------------------------------------
 const MARKET_CODE_MAP = {
@@ -159,10 +155,8 @@ export async function getMarketInvestorTrend(marketCode) {
     { FID_INPUT_ISCD: codes.iscd, FID_INPUT_ISCD_2: codes.iscd2 }
   );
 
-  // 응답 output은 배열 형태 (Example 기준 원소 1개)
   const o = (data.output && data.output[0]) || {};
 
-  // *_ntby_tr_pbmn = 순매수 거래대금. 개인/외국인은 개별 필드, 기관은 "기관계"(orgn_*)를 사용합니다.
   return {
     individual: Number(o.prsn_ntby_tr_pbmn),
     institution: Number(o.orgn_ntby_tr_pbmn),
@@ -171,10 +165,8 @@ export async function getMarketInvestorTrend(marketCode) {
 }
 
 // ---------------------------------------------------------------------------
-// 5. 거래대금 상위 종목 (코스피/코스닥 각 5종목) — 완성됨
+// 5. 거래대금 상위 종목 (코스피/코스닥 각 5종목)
 //    TR_ID: FHPST01710000 / URL: /uapi/domestic-stock/v1/quotations/volume-rank
-//    FID_BLNG_CLS_CODE="3"(거래금액순)으로 정렬, FID_INPUT_ISCD에 업종코드(0001=코스피,
-//    1001=코스닥)를 넣어 시장을 구분합니다.
 // ---------------------------------------------------------------------------
 const TOP_VALUE_MARKET_ISCD = { KOSPI: "0001", KOSDAQ: "1001" };
 
@@ -190,7 +182,7 @@ export async function getTopTradingValueStocks(marketCode) {
       FID_COND_SCR_DIV_CODE: "20171",
       FID_INPUT_ISCD: iscd,
       FID_DIV_CLS_CODE: "0",
-      FID_BLNG_CLS_CODE: "3", // 3: 거래금액순
+      FID_BLNG_CLS_CODE: "3",
       FID_TRGT_CLS_CODE: "111111111",
       FID_TRGT_EXLS_CLS_CODE: "0000000000",
       FID_INPUT_PRICE_1: "",
@@ -208,10 +200,8 @@ export async function getTopTradingValueStocks(marketCode) {
 }
 
 // ---------------------------------------------------------------------------
-// 6. 한국 국채 3년물 / 10년물 금리 — 완성됨
+// 6. 한국 국채 3년물 / 10년물 금리
 //    TR_ID: FHPST07020000 / URL: /uapi/domestic-stock/v1/quotations/comp-interest
-//    output2 배열 안에 "국고채 3년"(Y0101), "국고채 10년"(Y0106) 항목이 들어있습니다.
-//    ※ 문서에 따르면 이 데이터는 11:30 이후에 신규 갱신됩니다 (그 전엔 전일값).
 // ---------------------------------------------------------------------------
 const TENOR_BCDT_CODE = { "3Y": "Y0101", "10Y": "Y0106" };
 
@@ -241,16 +231,8 @@ export async function getKrTreasuryYield(tenor) {
 }
 
 // ---------------------------------------------------------------------------
-// 7. KOSPI200 야간선물 — 완성됨
+// 7. KOSPI200 야간선물
 //    TR_ID: FHMIF10000000 / URL: /uapi/domestic-futureoption/v1/quotations/inquire-price
-//    FID_COND_MRKT_DIV_CODE: "CM" (야간선물) — 주간선물과 같은 종목코드를 그대로 쓰고
-//    시장구분만 CM으로 바꿔서 조회합니다.
-//
-//    ⚠️ 이 종목코드는 "현재 근월물" 코드라 만기(3/6/9/12월)마다 바뀝니다.
-//    2026-08-13 기준 최근월물(2026년 9월물) 코드로 채워뒀습니다. 다음 롤오버는
-//    2026년 9월 만기 이후이니, 그 무렵 종목정보파일을 다시 받아서
-//    KOSPI200_NIGHT_FUTURES_CODE 값을 다음 월물 코드로 갱신해주세요.
-//    (파일 안에서 다음 월물은 "A01612" 로 확인됩니다.)
 // ---------------------------------------------------------------------------
 const KOSPI200_NIGHT_FUTURES_CODE = "A01609"; // 2026년 9월물
 
