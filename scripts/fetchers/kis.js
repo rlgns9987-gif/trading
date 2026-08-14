@@ -70,7 +70,7 @@ function throttle() {
   return result;
 }
 
-async function kisGet(pathname, trId, params, isRetry = false) {
+async function kisGet(pathname, trId, params, retryCount = 0) {
   const token = await getAccessToken();
   const url = new URL(DOMAIN + pathname);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
@@ -89,10 +89,10 @@ async function kisGet(pathname, trId, params, isRetry = false) {
 
   if (!res.ok) {
     const bodyText = await res.text();
-    // 초당 거래건수 초과(EGW00201)는 순간적으로 튀는 제한이라, 조금 더 쉬었다가 한 번만 재시도합니다.
-    if (!isRetry && bodyText.includes("EGW00201")) {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      return kisGet(pathname, trId, params, true);
+    // 초당 거래건수 초과(EGW00201)는 순간적으로 튀는 제한이라, 조금 더 쉬었다가 최대 2번 재시도합니다.
+    if (retryCount < 2 && bodyText.includes("EGW00201")) {
+      await new Promise((resolve) => setTimeout(resolve, 1500 * (retryCount + 1)));
+      return kisGet(pathname, trId, params, retryCount + 1);
     }
     throw new Error(`KIS API 호출 실패 (${trId}): ${res.status} ${bodyText}`);
   }
