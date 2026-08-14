@@ -220,13 +220,6 @@ export async function getKrTreasuryYield(tenor) {
     }
   );
 
-  console.log(
-    `[debug] 국채 output2 전체:`,
-    (data.output2 || [])
-      .map((r) => `${r.bcdt_code}/prpr=${r.bond_mnrt_prpr}/sign=${r.prdy_vrss_sign}/vrss=${r.bond_mnrt_prdy_vrss}/ctrt=${r.bstp_nmix_prdy_ctrt}`)
-      .join(" || ")
-  );
-
   const o = (data.output2 || []).find((row) => row.bcdt_code === bcdtCode);
   if (!o) throw new Error(`금리 데이터에서 ${tenor}(${bcdtCode})를 찾지 못했습니다.`);
 
