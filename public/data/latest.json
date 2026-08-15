@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T03:48:39.211Z",
+  "updatedAt": "2026-08-15T03:49:41.466Z",
   "supply": {
     "kospi": {
       "individual": {
@@ -96,7 +96,48 @@
         "vs20dAvg": 369501934350
       }
     ],
-    "kosdaq": []
+    "kosdaq": [
+      {
+        "name": "제주반도체",
+        "price": 81500,
+        "changeRate": -7.7,
+        "tradingValue": 351086523350,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "현대무벡스",
+        "price": 28000,
+        "changeRate": 10.67,
+        "tradingValue": 280309158800,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "한라캐스트",
+        "price": 12590,
+        "changeRate": 16.25,
+        "tradingValue": 235891718505,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "주성엔지니어링",
+        "price": 177800,
+        "changeRate": -0.84,
+        "tradingValue": 225427761800,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      },
+      {
+        "name": "케이앤에스아이앤씨",
+        "price": 14860,
+        "changeRate": -3.38,
+        "tradingValue": 182279066920,
+        "vsYesterday": null,
+        "vs20dAvg": null
+      }
+    ]
   },
   "indices": {
     "kospi": {
@@ -201,12 +242,12 @@
       "changeRate": -2.5974025974026027
     },
     "btc": {
-      "price": 63008,
-      "changeRate": -0.4947753257527107
+      "price": 63006,
+      "changeRate": -0.48279169933687605
     },
     "eth": {
-      "price": 1881.38,
-      "changeRate": -0.07582743948295649
+      "price": 1881.34,
+      "changeRate": -0.0543063035204735
     }
   }
 }
