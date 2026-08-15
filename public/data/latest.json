@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T08:39:38.498Z",
+  "updatedAt": "2026-08-15T08:40:48.280Z",
   "supply": {
     "kospi": {
       "individual": {
@@ -38,18 +38,18 @@
     "futures": {
       "individual": {
         "netBuy": -26029,
-        "vsYesterday": -26029,
-        "vs20dAvg": -26029
+        "vsYesterday": null,
+        "vs20dAvg": null
       },
       "institution": {
         "netBuy": 316793,
-        "vsYesterday": 316793,
-        "vs20dAvg": 316793
+        "vsYesterday": null,
+        "vs20dAvg": null
       },
       "foreign": {
         "netBuy": -310139,
-        "vsYesterday": -310139,
-        "vs20dAvg": -310139
+        "vsYesterday": null,
+        "vs20dAvg": null
       }
     }
   },
@@ -92,8 +92,8 @@
         "price": 195600,
         "changeRate": 4.15,
         "tradingValue": 744107274500,
-        "vsYesterday": 743174759200,
-        "vs20dAvg": 743174759200
+        "vsYesterday": 743334124000,
+        "vs20dAvg": 743334124000
       }
     ],
     "kosdaq": [
@@ -102,8 +102,8 @@
         "price": 81500,
         "changeRate": -7.7,
         "tradingValue": 351086523350,
-        "vsYesterday": 349394965950,
-        "vs20dAvg": 349394965950
+        "vsYesterday": 349897542650,
+        "vs20dAvg": 349897542650
       },
       {
         "name": "현대무벡스",
@@ -118,8 +118,8 @@
         "price": 12590,
         "changeRate": 16.25,
         "tradingValue": 235891718505,
-        "vsYesterday": 235230819265,
-        "vs20dAvg": 235230819265
+        "vsYesterday": 235319576035,
+        "vs20dAvg": 235319576035
       },
       {
         "name": "주성엔지니어링",
@@ -134,8 +134,8 @@
         "price": 14860,
         "changeRate": -3.38,
         "tradingValue": 182279066920,
-        "vsYesterday": 181733115930,
-        "vs20dAvg": 181733115930
+        "vsYesterday": 181804011400,
+        "vs20dAvg": 181804011400
       }
     ]
   },
@@ -242,12 +242,12 @@
       "changeRate": -2.5974025974026027
     },
     "btc": {
-      "price": 62974,
-      "changeRate": 0.3169798155426705
+      "price": 62972,
+      "changeRate": 0.27174894991691545
     },
     "eth": {
-      "price": 1877.83,
-      "changeRate": 0.2732083344412212
+      "price": 1877.9,
+      "changeRate": 0.2716290719023679
     }
   }
 }
