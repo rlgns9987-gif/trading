@@ -1,55 +1,55 @@
 {
-  "updatedAt": "2026-08-16T02:39:39.286Z",
+  "updatedAt": "2026-08-16T02:40:50.002Z",
   "supply": {
     "kospi": {
       "individual": {
         "netBuy": -1982030,
         "vsYesterday": -1982030,
-        "vs20dAvg": -957504.5
+        "vs20dAvg": -1330018
       },
       "institution": {
         "netBuy": -1029823,
         "vsYesterday": -1029823,
-        "vs20dAvg": -665288.5
+        "vs20dAvg": -738038
       },
       "foreign": {
         "netBuy": 3038711,
         "vsYesterday": 3038711,
-        "vs20dAvg": 1641764
+        "vs20dAvg": 2096745.5
       }
     },
     "kosdaq": {
       "individual": {
         "netBuy": 314486,
         "vsYesterday": 314486,
-        "vs20dAvg": 156012.5
+        "vs20dAvg": 294445
       },
       "institution": {
         "netBuy": -252423,
         "vsYesterday": -252423,
-        "vs20dAvg": -133267
+        "vs20dAvg": -205185
       },
       "foreign": {
         "netBuy": -65863,
         "vsYesterday": -65863,
-        "vs20dAvg": -24995.5
+        "vs20dAvg": -91423.5
       }
     },
     "futures": {
       "individual": {
         "netBuy": -26029,
         "vsYesterday": -26029,
-        "vs20dAvg": -46344.5
+        "vs20dAvg": 42564
       },
       "institution": {
         "netBuy": 316793,
         "vsYesterday": 316793,
-        "vs20dAvg": 294218.5
+        "vs20dAvg": 152715
       },
       "foreign": {
         "netBuy": -310139,
         "vsYesterday": -310139,
-        "vs20dAvg": -249320
+        "vs20dAvg": -211721
       }
     }
   },
@@ -61,7 +61,7 @@
         "changeRate": 3.26,
         "tradingValue": 7489699281000,
         "vsYesterday": 7489699281000,
-        "vs20dAvg": 4114724165750
+        "vs20dAvg": 5706941292500
       },
       {
         "name": "삼성전자",
@@ -69,7 +69,7 @@
         "changeRate": 2.43,
         "tradingValue": 5874450961500,
         "vsYesterday": 5874450961500,
-        "vs20dAvg": 3198520090250
+        "vs20dAvg": 4313859193500
       },
       {
         "name": "삼성전기",
@@ -77,7 +77,7 @@
         "changeRate": 3.66,
         "tradingValue": 1504282797000,
         "vsYesterday": 1504282797000,
-        "vs20dAvg": 877024527750
+        "vs20dAvg": 1292264709500
       },
       {
         "name": "SK스퀘어",
@@ -85,7 +85,7 @@
         "changeRate": 3.31,
         "tradingValue": 759169507500,
         "vsYesterday": 759169507500,
-        "vs20dAvg": 429729106725
+        "vs20dAvg": 592330411250
       },
       {
         "name": "삼성전자우",
@@ -93,7 +93,7 @@
         "changeRate": 4.15,
         "tradingValue": 744107274500,
         "vsYesterday": 744107274500,
-        "vs20dAvg": 415800368500
+        "vs20dAvg": 556804604425
       }
     ],
     "kosdaq": [
@@ -242,12 +242,12 @@
       "changeRate": -2.5974025974026027
     },
     "btc": {
-      "price": 63065,
-      "changeRate": 0.01950213045020967
+      "price": 63063,
+      "changeRate": -0.007548653260402858
     },
     "eth": {
-      "price": 1882.3,
-      "changeRate": -0.059645655716920244
+      "price": 1882.04,
+      "changeRate": -0.06341510943140237
     }
   }
 }
