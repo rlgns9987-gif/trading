@@ -1,160 +1,66 @@
 {
-  "updatedAt": "2026-08-17T23:28:38.993Z",
+  "updatedAt": "2026-08-17T23:29:55.558Z",
   "supply": {
     "kospi": {
       "individual": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": -1982030,
         "vs20dAvg": -991015
       },
       "institution": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": -1029823,
         "vs20dAvg": -514911.5
       },
       "foreign": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": 3038711,
         "vs20dAvg": 1519355.5
       }
     },
     "kosdaq": {
       "individual": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": 314486,
         "vs20dAvg": 157243
       },
       "institution": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": -252423,
         "vs20dAvg": -126211.5
       },
       "foreign": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": -65863,
         "vs20dAvg": -32931.5
       }
     },
     "futures": {
       "individual": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": -26029,
         "vs20dAvg": -26029
       },
       "institution": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": 316793,
         "vs20dAvg": 316793
       },
       "foreign": {
-        "netBuy": 0,
+        "netBuy": null,
         "vsYesterday": -310139,
         "vs20dAvg": -310139
       }
     }
   },
   "topValue": {
-    "kospi": [
-      {
-        "name": "동화약품",
-        "price": 5310,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 7489699281000,
-        "vs20dAvg": 3744849640500
-      },
-      {
-        "name": "KR모터스",
-        "price": 1221,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 5874450961500,
-        "vs20dAvg": 2937225480750
-      },
-      {
-        "name": "경방",
-        "price": 8900,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 1504282797000,
-        "vs20dAvg": 752141398500
-      },
-      {
-        "name": "삼양홀딩스",
-        "price": 60200,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 759169507500,
-        "vs20dAvg": 379584753750
-      },
-      {
-        "name": "하이트진로",
-        "price": 15850,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 744107274500,
-        "vs20dAvg": 372053637250
-      }
-    ],
-    "kosdaq": [
-      {
-        "name": "덕양에너젠",
-        "price": 8920,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 351086523350,
-        "vs20dAvg": 175543261675
-      },
-      {
-        "name": "삼천당제약",
-        "price": 189000,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 280309158800,
-        "vs20dAvg": 140154579400
-      },
-      {
-        "name": "중앙에너비스",
-        "price": 12280,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 235891718505,
-        "vs20dAvg": 117945859252.5
-      },
-      {
-        "name": "엔비알모션",
-        "price": 6960,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 225427761800,
-        "vs20dAvg": 112713880900
-      },
-      {
-        "name": "디비금융제14호스팩",
-        "price": 1991,
-        "changeRate": 0,
-        "tradingValue": 0,
-        "vsYesterday": 182279066920,
-        "vs20dAvg": 91139533460
-      }
-    ]
+    "kospi": [],
+    "kosdaq": []
   },
   "indices": {
-    "kospi": {
-      "value": 6977.94,
-      "change": 0,
-      "changeRate": 0
-    },
-    "kosdaq": {
-      "value": 864.65,
-      "change": 0,
-      "changeRate": 0
-    },
-    "kospi200Night": {
-      "value": 1094.95,
-      "change": -3.95,
-      "changeRate": -0.36
-    },
+    "kospi": null,
+    "kosdaq": null,
+    "kospi200Night": null,
     "nikkei225": {
       "price": 69220.25,
       "prevClose": 68713.8,
@@ -162,16 +68,16 @@
       "changeRate": 0.7370426319021754
     },
     "nasdaq100Futures": {
-      "price": 30076,
+      "price": 30081.25,
       "prevClose": 30096,
-      "change": -20,
-      "changeRate": -0.06645401382243488
+      "change": -14.75,
+      "changeRate": -0.049009835194045726
     },
     "sp500Futures": {
-      "price": 7764.25,
+      "price": 7764.75,
       "prevClose": 7768.75,
-      "change": -4.5,
-      "changeRate": -0.0579243765084473
+      "change": -4,
+      "changeRate": -0.051488334674175386
     },
     "philadelphiaSemi": {
       "price": 12621.005,
@@ -198,22 +104,22 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4473,
+      "price": 4473.9,
       "prevClose": 4473.7,
-      "change": -0.6999999999998181,
-      "changeRate": -0.01564700359880676
+      "change": 0.1999999999998181,
+      "changeRate": 0.004470572456799027
     },
     "silver": {
-      "price": 65.91,
+      "price": 65.94,
       "prevClose": 66.231,
-      "change": -0.32099999999999795,
-      "changeRate": -0.48466730081079556
+      "change": -0.2909999999999968,
+      "changeRate": -0.4393712913892238
     },
     "wti": {
-      "price": 85.05,
+      "price": 85.04,
       "prevClose": 84.5,
-      "change": 0.5499999999999972,
-      "changeRate": 0.6508875739644936
+      "change": 0.5400000000000063,
+      "changeRate": 0.6390532544378772
     },
     "brent": {
       "price": 91.22,
@@ -228,10 +134,10 @@
       "changeRate": -0.05620402059475635
     },
     "usdkrw": {
-      "price": 1414.66,
+      "price": 1413.88,
       "prevClose": 1414.85,
-      "change": -0.1899999999998272,
-      "changeRate": -0.013428985404801018
+      "change": -0.9699999999997999,
+      "changeRate": -0.06855850443508499
     }
   },
   "volatilityCrypto": {
@@ -242,12 +148,12 @@
       "changeRate": 6.596491228070173
     },
     "btc": {
-      "price": 64377,
-      "changeRate": 2.5103294282674433
+      "price": 64402,
+      "changeRate": 2.575331375233213
     },
     "eth": {
-      "price": 1910.45,
-      "changeRate": 2.0095937802878048
+      "price": 1912.03,
+      "changeRate": 2.1124844570415573
     }
   }
 }
