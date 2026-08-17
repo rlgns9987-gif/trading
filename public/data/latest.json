@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T12:17:38.482Z",
+  "updatedAt": "2026-08-17T12:18:38.980Z",
   "supply": {
     "kospi": {
       "individual": {
@@ -102,7 +102,7 @@
         "price": 81500,
         "changeRate": -7.7,
         "tradingValue": 351086523350,
-        "vsYesterday": 351086523350,
+        "vsYesterday": null,
         "vs20dAvg": 351086523350
       },
       {
@@ -110,7 +110,7 @@
         "price": 28000,
         "changeRate": 10.67,
         "tradingValue": 280309158800,
-        "vsYesterday": 280309158800,
+        "vsYesterday": null,
         "vs20dAvg": 280309158800
       },
       {
@@ -118,7 +118,7 @@
         "price": 12590,
         "changeRate": 16.25,
         "tradingValue": 235891718505,
-        "vsYesterday": 235891718505,
+        "vsYesterday": null,
         "vs20dAvg": 235891718505
       },
       {
@@ -126,7 +126,7 @@
         "price": 177800,
         "changeRate": -0.84,
         "tradingValue": 225427761800,
-        "vsYesterday": 225427761800,
+        "vsYesterday": null,
         "vs20dAvg": 225427761800
       },
       {
@@ -134,7 +134,7 @@
         "price": 14860,
         "changeRate": -3.38,
         "tradingValue": 182279066920,
-        "vsYesterday": 182279066920,
+        "vsYesterday": null,
         "vs20dAvg": 182279066920
       }
     ]
@@ -162,16 +162,16 @@
       "changeRate": 0.7370426319021754
     },
     "nasdaq100Futures": {
-      "price": 30252.25,
+      "price": 30259.25,
       "prevClose": 30141.75,
-      "change": 110.5,
-      "changeRate": 0.366601142932975
+      "change": 117.5,
+      "changeRate": 0.3898247447477336
     },
     "sp500Futures": {
-      "price": 7811.25,
+      "price": 7812.25,
       "prevClose": 7805,
-      "change": 6.25,
-      "changeRate": 0.0800768737988469
+      "change": 7.25,
+      "changeRate": 0.09288917360666239
     },
     "philadelphiaSemi": {
       "price": 12417.05,
@@ -198,56 +198,56 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4451,
+      "price": 4449.2,
       "prevClose": 4437.3,
-      "change": 13.699999999999818,
-      "changeRate": 0.3087463096928271
+      "change": 11.899999999999636,
+      "changeRate": 0.2681811011200423
     },
     "silver": {
-      "price": 65.83,
+      "price": 65.82,
       "prevClose": 65.108,
-      "change": 0.7219999999999942,
-      "changeRate": 1.1089267063955184
+      "change": 0.7119999999999891,
+      "changeRate": 1.0935676107390628
     },
     "wti": {
-      "price": 82.42,
+      "price": 82.35,
       "prevClose": 82.4,
-      "change": 0.01999999999999602,
-      "changeRate": 0.024271844660189345
+      "change": -0.05000000000001137,
+      "changeRate": -0.06067961165049923
     },
     "brent": {
-      "price": 88.82,
+      "price": 88.78,
       "prevClose": 88.52,
-      "change": 0.29999999999999716,
-      "changeRate": 0.33890646181653544
+      "change": 0.2600000000000051,
+      "changeRate": 0.2937189335743393
     },
     "dxy": {
-      "price": 99.443,
+      "price": 99.437,
       "prevClose": 99.667,
-      "change": -0.22400000000000375,
-      "changeRate": -0.22474841221267194
+      "change": -0.23000000000000398,
+      "changeRate": -0.23076845896836864
     },
     "usdkrw": {
-      "price": 1410.71,
+      "price": 1412.65,
       "prevClose": 1416.48,
-      "change": -5.769999999999982,
-      "changeRate": -0.40734779170902385
+      "change": -3.8299999999999272,
+      "changeRate": -0.2703885688467135
     }
   },
   "volatilityCrypto": {
     "vix": {
-      "price": 14.91,
+      "price": 14.92,
       "prevClose": 14.25,
-      "change": 0.6600000000000001,
-      "changeRate": 4.631578947368422
+      "change": 0.6699999999999999,
+      "changeRate": 4.701754385964912
     },
     "btc": {
-      "price": 63596,
-      "changeRate": 0.9964065594145411
+      "price": 63580,
+      "changeRate": 0.9681106311240836
     },
     "eth": {
-      "price": 1901.86,
-      "changeRate": 1.253618168735157
+      "price": 1901.49,
+      "changeRate": 1.233874925788569
     }
   }
 }
