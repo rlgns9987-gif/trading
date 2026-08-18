@@ -1,55 +1,55 @@
 {
-  "updatedAt": "2026-08-18T20:31:42.416Z",
+  "updatedAt": "2026-08-18T20:32:38.466Z",
   "supply": {
     "kospi": {
       "individual": {
-        "netBuy": 741997,
-        "vsYesterday": -1982030,
-        "vs20dAvg": -2235031
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -1574354.3333333333
       },
       "institution": {
-        "netBuy": -795137,
-        "vsYesterday": -1029823,
-        "vs20dAvg": -458745
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -115470.66666666667
       },
       "foreign": {
-        "netBuy": 91404,
-        "vsYesterday": 3038711,
-        "vs20dAvg": 2729210.6666666665
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": 1716307
       }
     },
     "kosdaq": {
       "individual": {
-        "netBuy": 390459,
-        "vsYesterday": 314486,
-        "vs20dAvg": 295171
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": 190342.33333333334
       },
       "institution": {
-        "netBuy": -417571,
-        "vsYesterday": -252423,
-        "vs20dAvg": -206027.66666666666
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -121886.66666666667
       },
       "foreign": {
-        "netBuy": 36619,
-        "vsYesterday": -65863,
-        "vs20dAvg": -89311.33333333333
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -67357
       }
     },
     "futures": {
       "individual": {
-        "netBuy": 370990,
-        "vsYesterday": -26029,
-        "vs20dAvg": -26029
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -13014.5
       },
       "institution": {
-        "netBuy": -615177,
-        "vsYesterday": 316793,
-        "vs20dAvg": 316793
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": 158396.5
       },
       "foreign": {
-        "netBuy": 224002,
-        "vsYesterday": -310139,
-        "vs20dAvg": -310139
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -155069.5
       }
     }
   },
@@ -69,8 +69,8 @@
       "changeRate": 0
     },
     "kospi200Night": {
-      "value": 1030.7,
-      "change": -47.55,
+      "value": 1030.75,
+      "change": -47.5,
       "changeRate": -4.41
     },
     "nikkei225": {
@@ -80,16 +80,16 @@
       "changeRate": -2.5419151187694413
     },
     "nasdaq100Futures": {
-      "price": 29572,
+      "price": 29570.75,
       "prevClose": 30096,
-      "change": -524,
-      "changeRate": -1.7410951621477937
+      "change": -525.25,
+      "changeRate": -1.745248538011696
     },
     "sp500Futures": {
-      "price": 7714.25,
+      "price": 7714,
       "prevClose": 7768.75,
-      "change": -54.5,
-      "changeRate": -0.7015285599356396
+      "change": -54.75,
+      "changeRate": -0.7047465808527755
     },
     "philadelphiaSemi": {
       "price": 11992.463,
@@ -116,22 +116,22 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4391.7,
+      "price": 4391.8,
       "prevClose": 4473.7,
-      "change": -82,
-      "changeRate": -1.8329347072892683
+      "change": -81.89999999999964,
+      "changeRate": -1.8306994210608587
     },
     "silver": {
-      "price": 63.48,
+      "price": 63.53,
       "prevClose": 66.231,
-      "change": -2.7509999999999977,
-      "changeRate": -4.153644063957962
+      "change": -2.7009999999999934,
+      "changeRate": -4.078150714922005
     },
     "wti": {
-      "price": 84.23,
+      "price": 84.22,
       "prevClose": 83.74,
-      "change": 0.4900000000000091,
-      "changeRate": 0.5851444948650695
+      "change": 0.480000000000004,
+      "changeRate": 0.5732027704800622
     },
     "brent": {
       "price": 91.09,
@@ -146,10 +146,10 @@
       "changeRate": 0.04114937222115963
     },
     "usdkrw": {
-      "price": 1412.63,
+      "price": 1412.62,
       "prevClose": 1414.85,
-      "change": -2.2199999999998,
-      "changeRate": -0.15690709262464572
+      "change": -2.230000000000018,
+      "changeRate": -0.15761388133017765
     }
   },
   "volatilityCrypto": {
