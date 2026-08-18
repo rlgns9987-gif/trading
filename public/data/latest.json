@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T08:19:38.576Z",
+  "updatedAt": "2026-08-18T08:20:50.518Z",
   "supply": {
     "kospi": {
       "individual": {
@@ -91,7 +91,7 @@
         "name": "삼성전자우",
         "price": 188300,
         "changeRate": -3.73,
-        "tradingValue": 843775827600,
+        "tradingValue": 843943827600,
         "vsYesterday": 744107274500,
         "vs20dAvg": 743015581050
       }
@@ -101,7 +101,7 @@
         "name": "주성엔지니어링",
         "price": 179300,
         "changeRate": 0.84,
-        "tradingValue": 423812796150,
+        "tradingValue": 423902205750,
         "vsYesterday": 351086523350,
         "vs20dAvg": 348956426500
       },
@@ -109,7 +109,7 @@
         "name": "HPSP",
         "price": 42650,
         "changeRate": 5.57,
-        "tradingValue": 289838768675,
+        "tradingValue": 289959207475,
         "vsYesterday": 280309158800,
         "vs20dAvg": 279469605175
       },
@@ -117,7 +117,7 @@
         "name": "하나마이크론",
         "price": 39200,
         "changeRate": 7.1,
-        "tradingValue": 272458556100,
+        "tradingValue": 272600328900,
         "vsYesterday": 235891718505,
         "vs20dAvg": 235218297120
       },
@@ -125,7 +125,7 @@
         "name": "제주반도체",
         "price": 75800,
         "changeRate": -6.99,
-        "tradingValue": 239406143750,
+        "tradingValue": 239622132950,
         "vsYesterday": 225427761800,
         "vs20dAvg": 224809143900
       },
@@ -162,16 +162,16 @@
       "changeRate": -2.5419151187694413
     },
     "nasdaq100Futures": {
-      "price": 29752.5,
+      "price": 29750,
       "prevClose": 30096,
-      "change": -343.5,
-      "changeRate": -1.141347687400319
+      "change": -346,
+      "changeRate": -1.1496544391281234
     },
     "sp500Futures": {
-      "price": 7721.25,
+      "price": 7721.5,
       "prevClose": 7768.75,
-      "change": -47.5,
-      "changeRate": -0.6114239742558327
+      "change": -47.25,
+      "changeRate": -0.6082059533386968
     },
     "philadelphiaSemi": {
       "price": 12621.005,
@@ -198,56 +198,56 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4447,
+      "price": 4445.9,
       "prevClose": 4473.7,
-      "change": -26.699999999999818,
-      "changeRate": -0.596821422983209
+      "change": -27.800000000000182,
+      "changeRate": -0.6214095714956341
     },
     "silver": {
-      "price": 64.975,
+      "price": 64.97,
       "prevClose": 66.231,
-      "change": -1.2560000000000002,
-      "changeRate": -1.8963929277830627
+      "change": -1.2609999999999957,
+      "changeRate": -1.9039422626866511
     },
     "wti": {
-      "price": 84.5,
+      "price": 84.39,
       "prevClose": 83.74,
-      "change": 0.7600000000000051,
-      "changeRate": 0.9075710532600969
+      "change": 0.6500000000000057,
+      "changeRate": 0.7762120850250844
     },
     "brent": {
-      "price": 91.41,
+      "price": 91.29,
       "prevClose": 90.87,
-      "change": 0.539999999999992,
-      "changeRate": 0.5942555298778387
+      "change": 0.4200000000000017,
+      "changeRate": 0.4621987454605499
     },
     "dxy": {
-      "price": 99.67,
+      "price": 99.667,
       "prevClose": 99.637,
-      "change": 0.03300000000000125,
-      "changeRate": 0.03312022642191279
+      "change": 0.030000000000001137,
+      "changeRate": 0.030109296747193447
     },
     "usdkrw": {
-      "price": 1411.91,
+      "price": 1412.25,
       "prevClose": 1414.85,
-      "change": -2.939999999999827,
-      "changeRate": -0.20779587942183464
+      "change": -2.599999999999909,
+      "changeRate": -0.18376506343427992
     }
   },
   "volatilityCrypto": {
     "vix": {
-      "price": 16.01,
+      "price": 16.06,
       "prevClose": 15.19,
-      "change": 0.8200000000000021,
-      "changeRate": 5.398288347597116
+      "change": 0.8699999999999992,
+      "changeRate": 5.727452271231068
     },
     "btc": {
-      "price": 64145,
-      "changeRate": 1.2238196627384685
+      "price": 64151,
+      "changeRate": 1.1981057063236922
     },
     "eth": {
-      "price": 1896.79,
-      "changeRate": 0.15716430381803329
+      "price": 1896.26,
+      "changeRate": 0.08639439175830194
     }
   }
 }
