@@ -1,38 +1,38 @@
 {
-  "updatedAt": "2026-08-19T08:01:40.484Z",
+  "updatedAt": "2026-08-19T08:02:41.076Z",
   "supply": {
     "kospi": {
       "individual": {
-        "netBuy": 4635752,
+        "netBuy": 4635689,
         "vsYesterday": 741448,
         "vs20dAvg": -620291
       },
       "institution": {
-        "netBuy": -1323229,
+        "netBuy": -1323170,
         "vsYesterday": -795138,
         "vs20dAvg": -912480.5
       },
       "foreign": {
-        "netBuy": -3488377,
-        "vsYesterday": 91411,
-        "vs20dAvg": 1565061
+        "netBuy": -3488372,
+        "vsYesterday": 91412,
+        "vs20dAvg": 1565061.5
       }
     },
     "kosdaq": {
       "individual": {
-        "netBuy": -71632,
-        "vsYesterday": 389216,
-        "vs20dAvg": 339624.6666666667
+        "netBuy": -71628,
+        "vsYesterday": 389274,
+        "vs20dAvg": 339644
       },
       "institution": {
-        "netBuy": 49905,
-        "vsYesterday": -416448,
-        "vs20dAvg": -307296
+        "netBuy": 49909,
+        "vsYesterday": -416447,
+        "vs20dAvg": -307295.6666666667
       },
       "foreign": {
-        "netBuy": 14734,
-        "vsYesterday": 36632,
-        "vs20dAvg": -31698.666666666668
+        "netBuy": 14717,
+        "vsYesterday": 36626,
+        "vs20dAvg": -31700.666666666668
       }
     },
     "futures": {
@@ -162,16 +162,16 @@
       "changeRate": -3.163781358428819
     },
     "nasdaq100Futures": {
-      "price": 29582.5,
+      "price": 29571.5,
       "prevClose": 29586,
-      "change": -3.5,
-      "changeRate": -0.011829919556547015
+      "change": -14.5,
+      "changeRate": -0.04900966673426621
     },
     "sp500Futures": {
-      "price": 7715.25,
+      "price": 7715,
       "prevClose": 7714,
-      "change": 1.25,
-      "changeRate": 0.01620430386310604
+      "change": 1,
+      "changeRate": 0.012963443090484831
     },
     "philadelphiaSemi": {
       "price": 11992.463,
@@ -198,56 +198,56 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4409.3,
+      "price": 4410.1,
       "prevClose": 4420.6,
-      "change": -11.300000000000182,
-      "changeRate": -0.2556214088585301
+      "change": -10.5,
+      "changeRate": -0.23752431796588697
     },
     "silver": {
-      "price": 63.135,
+      "price": 63.155,
       "prevClose": 64.037,
-      "change": -0.9020000000000081,
-      "changeRate": -1.4085606758592815
+      "change": -0.882000000000005,
+      "changeRate": -1.3773287318269203
     },
     "wti": {
-      "price": 84.54,
+      "price": 84.49,
       "prevClose": 84.06,
-      "change": 0.480000000000004,
-      "changeRate": 0.5710206995003616
+      "change": 0.4299999999999926,
+      "changeRate": 0.5115393766357276
     },
     "brent": {
-      "price": 91.5,
+      "price": 91.46,
       "prevClose": 91.02,
-      "change": 0.480000000000004,
-      "changeRate": 0.5273566249176049
+      "change": 0.4399999999999977,
+      "changeRate": 0.483410239507798
     },
     "dxy": {
-      "price": 99.483,
+      "price": 99.468,
       "prevClose": 99.657,
-      "change": -0.17399999999999238,
-      "changeRate": -0.17459887413828673
+      "change": -0.18899999999999295,
+      "changeRate": -0.18965050121917473
     },
     "usdkrw": {
-      "price": 1393.67,
+      "price": 1393.68,
       "prevClose": 1412.26,
-      "change": -18.589999999999918,
-      "changeRate": -1.316329854276119
+      "change": -18.579999999999927,
+      "changeRate": -1.3156217693625767
     }
   },
   "volatilityCrypto": {
     "vix": {
-      "price": 15.83,
+      "price": 15.82,
       "prevClose": 15.84,
-      "change": -0.009999999999999787,
-      "changeRate": -0.06313131313131178
+      "change": -0.019999999999999574,
+      "changeRate": -0.12626262626262355
     },
     "btc": {
-      "price": 64250,
-      "changeRate": 0.16956564030442142
+      "price": 64253,
+      "changeRate": 0.17301283935133327
     },
     "eth": {
-      "price": 1914.79,
-      "changeRate": 0.9392166037917328
+      "price": 1914.8,
+      "changeRate": 0.9659184097980545
     }
   }
 }
