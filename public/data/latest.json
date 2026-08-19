@@ -1,55 +1,55 @@
 {
-  "updatedAt": "2026-08-19T23:31:40.732Z",
+  "updatedAt": "2026-08-19T23:32:51.442Z",
   "supply": {
     "kospi": {
       "individual": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": -495507.5
+        "vs20dAvg": 0
       },
       "institution": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": -257455.75
+        "vs20dAvg": 0
       },
       "foreign": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": 759677.75
+        "vs20dAvg": 0
       }
     },
     "kosdaq": {
       "individual": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": 78621.5
+        "vs20dAvg": 0
       },
       "institution": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": -63105.75
+        "vs20dAvg": 0
       },
       "foreign": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": -16465.75
+        "vs20dAvg": 0
       }
     },
     "futures": {
       "individual": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": -8676.333333333334
+        "vs20dAvg": 0
       },
       "institution": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": 105597.66666666667
+        "vs20dAvg": 0
       },
       "foreign": {
         "netBuy": 0,
         "vsYesterday": 0,
-        "vs20dAvg": -103379.66666666667
+        "vs20dAvg": 0
       }
     }
   },
@@ -59,9 +59,9 @@
         "name": "신원",
         "price": 1177,
         "changeRate": 0,
-        "tradingValue": 23608266,
-        "vsYesterday": 45103500,
-        "vs20dAvg": 1872445992550
+        "tradingValue": 25790424,
+        "vsYesterday": 45220500,
+        "vs20dAvg": 28268733.333333332
       },
       {
         "name": "자이에스앤디",
@@ -69,7 +69,7 @@
         "changeRate": 0,
         "tradingValue": 22879100,
         "vsYesterday": 35034714,
-        "vs20dAvg": 1468626674803.5
+        "vs20dAvg": 20068038
       },
       {
         "name": "HD현대",
@@ -77,7 +77,15 @@
         "changeRate": 0,
         "tradingValue": 22800000,
         "vsYesterday": 27711080,
-        "vs20dAvg": 376082149370
+        "vs20dAvg": 16567510
+      },
+      {
+        "name": "삼성공조",
+        "price": 14700,
+        "changeRate": 0,
+        "tradingValue": 21491400,
+        "vsYesterday": 21325000,
+        "vs20dAvg": 14009333.333333334
       },
       {
         "name": "한화손해보험",
@@ -85,15 +93,7 @@
         "changeRate": 0,
         "tradingValue": 10950000,
         "vsYesterday": 19944000,
-        "vs20dAvg": 189801639875
-      },
-      {
-        "name": "인디에프",
-        "price": 3110,
-        "changeRate": 0,
-        "tradingValue": 10511800,
-        "vsYesterday": 17060000,
-        "vs20dAvg": 186034862185
+        "vs20dAvg": 12480073.333333334
       }
     ],
     "kosdaq": [
@@ -101,41 +101,41 @@
         "name": "마키나락스",
         "price": 26500,
         "changeRate": 0,
-        "tradingValue": 84800000,
+        "tradingValue": 90762500,
         "vsYesterday": 146481150,
-        "vs20dAvg": 87937457125
+        "vs20dAvg": 222315050
       },
       {
         "name": "좋은사람들",
         "price": 557,
         "changeRate": 0,
-        "tradingValue": 31017659,
-        "vsYesterday": 30544800,
-        "vs20dAvg": 70098616500
+        "tradingValue": 33149298,
+        "vsYesterday": 49786880,
+        "vs20dAvg": 34849760
       },
       {
         "name": "매드업",
         "price": 8140,
         "changeRate": 0,
-        "tradingValue": 19959280,
-        "vsYesterday": 19309650,
-        "vs20dAvg": 58991021163.75
+        "tradingValue": 20822120,
+        "vsYesterday": 22540000,
+        "vs20dAvg": 25226000
       },
       {
-        "name": "알테오젠",
-        "price": 303500,
+        "name": "HPSP",
+        "price": 45700,
         "changeRate": 0,
-        "tradingValue": 13657500,
+        "tradingValue": 14075600,
+        "vsYesterday": 19319300,
+        "vs20dAvg": 20384126.666666668
+      },
+      {
+        "name": "비보존 제약",
+        "price": 3320,
+        "changeRate": 0,
+        "tradingValue": 13977200,
         "vsYesterday": 19245235,
-        "vs20dAvg": 56371998618.75
-      },
-      {
-        "name": "대한광통신",
-        "price": 12700,
-        "changeRate": 0,
-        "tradingValue": 13436600,
-        "vsYesterday": 15610210,
-        "vs20dAvg": 45582796922.5
+        "vs20dAvg": 18985785
       }
     ]
   },
@@ -162,10 +162,10 @@
       "changeRate": -3.163781358428819
     },
     "nasdaq100Futures": {
-      "price": 29644.25,
+      "price": 29647.75,
       "prevClose": 29512.75,
-      "change": 131.5,
-      "changeRate": 0.4455701349416778
+      "change": 135,
+      "changeRate": 0.45742941609982124
     },
     "sp500Futures": {
       "price": 7741,
@@ -198,10 +198,10 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4577.2,
+      "price": 4576.3,
       "prevClose": 4545.3,
-      "change": 31.899999999999636,
-      "changeRate": 0.7018238620113004
+      "change": 31,
+      "changeRate": 0.6820231887884187
     },
     "silver": {
       "price": 67.17,
@@ -210,10 +210,10 @@
       "changeRate": 2.0432966198252926
     },
     "wti": {
-      "price": 84.55,
+      "price": 84.52,
       "prevClose": 84.39,
-      "change": 0.1599999999999966,
-      "changeRate": 0.18959592368763667
+      "change": 0.12999999999999545,
+      "changeRate": 0.1540466879962027
     },
     "brent": {
       "price": 91.72,
@@ -228,10 +228,10 @@
       "changeRate": -0.06576750680440513
     },
     "usdkrw": {
-      "price": 1389.09,
+      "price": 1389.44,
       "prevClose": 1387.14,
-      "change": 1.949999999999818,
-      "changeRate": 0.1405770145767419
+      "change": 2.2999999999999545,
+      "changeRate": 0.16580878642386163
     }
   },
   "volatilityCrypto": {
@@ -242,12 +242,12 @@
       "changeRate": -5.997474747474743
     },
     "btc": {
-      "price": 69367,
-      "changeRate": 7.238336067424628
+      "price": 69341,
+      "changeRate": 7.198606690262996
     },
     "eth": {
-      "price": 2251.88,
-      "changeRate": 17.43117918961206
+      "price": 2251.37,
+      "changeRate": 17.40323481362691
     }
   }
 }
