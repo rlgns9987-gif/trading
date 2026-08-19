@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:36:44.584Z",
+  "updatedAt": "2026-08-19T16:37:39.580Z",
   "supply": {
     "kospi": {
       "individual": {
@@ -151,9 +151,9 @@
       "changeRate": -1.17
     },
     "kospi200Night": {
-      "value": 1038.55,
-      "change": 22.3,
-      "changeRate": 2.19
+      "value": 1038.9,
+      "change": 22.65,
+      "changeRate": 2.23
     },
     "nikkei225": {
       "price": 65326.42,
@@ -162,92 +162,92 @@
       "changeRate": -3.163781358428819
     },
     "nasdaq100Futures": {
-      "price": 29622.75,
+      "price": 29629,
       "prevClose": 29586,
-      "change": 36.75,
-      "changeRate": 0.12421415534374367
+      "change": 43,
+      "changeRate": 0.14533901169472047
     },
     "sp500Futures": {
-      "price": 7751.5,
+      "price": 7751.75,
       "prevClose": 7714,
-      "change": 37.5,
-      "changeRate": 0.48612911589318125
+      "change": 37.75,
+      "changeRate": 0.4893699766658024
     },
     "philadelphiaSemi": {
-      "price": 11806.958,
+      "price": 11806.354,
       "prevClose": 11992.463,
-      "change": -185.5049999999992,
-      "changeRate": -1.5468465485363534
+      "change": -186.10900000000038,
+      "changeRate": -1.551883045209315
     }
   },
   "rates": {
     "krTreasury3y": null,
     "krTreasury10y": null,
     "usTreasury10y": {
-      "price": 0.466,
+      "price": 0.4659,
       "prevClose": 0.47060003000000006,
-      "change": -0.004600030000000021,
-      "changeRate": -0.9774818756386439
+      "change": -0.004700030000000055,
+      "changeRate": -0.9987313430473124
     },
     "usTreasury30y": {
-      "price": 0.5204,
+      "price": 0.5205,
       "prevClose": 0.5285,
-      "change": -0.008100000000000041,
-      "changeRate": -1.5326395458845865
+      "change": -0.008000000000000007,
+      "changeRate": -1.5137180700094621
     }
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4550.2,
+      "price": 4550.6,
       "prevClose": 4420.6,
-      "change": 129.59999999999945,
-      "changeRate": 2.9317287246075066
+      "change": 130,
+      "changeRate": 2.9407772700538386
     },
     "silver": {
-      "price": 65.98,
+      "price": 65.995,
       "prevClose": 64.037,
-      "change": 1.9429999999999978,
-      "changeRate": 3.0341833627434105
+      "change": 1.9579999999999984,
+      "changeRate": 3.0576073207676786
     },
     "wti": {
-      "price": 85.28,
+      "price": 85.31,
       "prevClose": 84.06,
-      "change": 1.2199999999999989,
-      "changeRate": 1.451344277896739
+      "change": 1.25,
+      "changeRate": 1.4870330716155127
     },
     "brent": {
-      "price": 92.19,
+      "price": 92.23,
       "prevClose": 91.02,
-      "change": 1.1700000000000017,
-      "changeRate": 1.2854317732366534
+      "change": 1.210000000000008,
+      "changeRate": 1.3293781586464601
     },
     "dxy": {
-      "price": 98.857,
+      "price": 98.855,
       "prevClose": 99.657,
-      "change": -0.7999999999999972,
-      "changeRate": -0.8027534443139942
+      "change": -0.8019999999999925,
+      "changeRate": -0.8047603279247745
     },
     "usdkrw": {
-      "price": 1388.42,
+      "price": 1388.43,
       "prevClose": 1412.26,
-      "change": -23.839999999999918,
-      "changeRate": -1.6880744338861058
+      "change": -23.829999999999927,
+      "changeRate": -1.6873663489725637
     }
   },
   "volatilityCrypto": {
     "vix": {
-      "price": 15.08,
+      "price": 15.09,
       "prevClose": 15.84,
-      "change": -0.7599999999999998,
-      "changeRate": -4.797979797979797
+      "change": -0.75,
+      "changeRate": -4.734848484848484
     },
     "btc": {
-      "price": 68765,
-      "changeRate": 6.287234921499081
+      "price": 68743,
+      "changeRate": 6.249678980704916
     },
     "eth": {
-      "price": 2097.96,
-      "changeRate": 9.641237230848576
+      "price": 2097.19,
+      "changeRate": 9.59764598693206
     }
   }
 }
