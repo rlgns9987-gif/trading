@@ -1,38 +1,38 @@
 {
-  "updatedAt": "2026-08-19T15:48:39.931Z",
+  "updatedAt": "2026-08-19T15:49:39.282Z",
   "supply": {
     "kospi": {
       "individual": {
         "netBuy": 4635672,
         "vsYesterday": 741997,
-        "vs20dAvg": -1074021
+        "vs20dAvg": -1490774
       },
       "institution": {
         "netBuy": -1338952,
         "vsYesterday": -795137,
-        "vs20dAvg": -951594.3333333334
+        "vs20dAvg": -542843
       },
       "foreign": {
         "netBuy": -3472598,
         "vsYesterday": 91404,
-        "vs20dAvg": 2056275.3333333333
+        "vs20dAvg": 2069759
       }
     },
     "kosdaq": {
       "individual": {
         "netBuy": -66361,
         "vsYesterday": 390459,
-        "vs20dAvg": 318993
+        "vs20dAvg": 339810.3333333333
       },
       "institution": {
         "netBuy": 49950,
         "vsYesterday": -417571,
-        "vs20dAvg": -258913.5
+        "vs20dAvg": -307472.3333333333
       },
       "foreign": {
         "netBuy": 14730,
         "vsYesterday": 36619,
-        "vs20dAvg": -57828.75
+        "vs20dAvg": -31702.333333333332
       }
     },
     "futures": {
@@ -103,7 +103,7 @@
         "changeRate": 7.15,
         "tradingValue": 288408900975,
         "vsYesterday": 425125720550,
-        "vs20dAvg": 408306006247.5
+        "vs20dAvg": 375766255750
       },
       {
         "name": "아난티",
@@ -111,7 +111,7 @@
         "changeRate": 18.89,
         "tradingValue": 254019957138,
         "vsYesterday": 291159374125,
-        "vs20dAvg": 290195213606.25
+        "vs20dAvg": 283925897241.6667
       },
       {
         "name": "주성엔지니어링",
@@ -119,7 +119,7 @@
         "changeRate": -4.29,
         "tradingValue": 188497299900,
         "vsYesterday": 273582065150,
-        "vs20dAvg": 239057082852.5
+        "vs20dAvg": 248455167386.66666
       },
       {
         "name": "실리콘투",
@@ -127,7 +127,7 @@
         "changeRate": 1.8,
         "tradingValue": 169908671825,
         "vsYesterday": 240578931450,
-        "vs20dAvg": 224461349752.5
+        "vs20dAvg": 230478151683.33334
       },
       {
         "name": "로보티즈",
@@ -135,7 +135,7 @@
         "changeRate": -4.3,
         "tradingValue": 148711277000,
         "vsYesterday": 145130204850,
-        "vs20dAvg": 178385810947.5
+        "vs20dAvg": 169896112896.66666
       }
     ]
   },
@@ -151,9 +151,9 @@
       "changeRate": -1.17
     },
     "kospi200Night": {
-      "value": 1043.05,
-      "change": 26.8,
-      "changeRate": 2.64
+      "value": 1043,
+      "change": 26.75,
+      "changeRate": 2.63
     },
     "nikkei225": {
       "price": 65326.42,
@@ -162,92 +162,92 @@
       "changeRate": -3.163781358428819
     },
     "nasdaq100Futures": {
-      "price": 29589.75,
+      "price": 29582,
       "prevClose": 29586,
-      "change": 3.75,
-      "changeRate": 0.012674913810586087
+      "change": -4,
+      "changeRate": -0.01351990806462516
     },
     "sp500Futures": {
-      "price": 7747,
+      "price": 7746,
       "prevClose": 7714,
-      "change": 33,
-      "changeRate": 0.4277936219859995
+      "change": 32,
+      "changeRate": 0.4148301788955146
     },
     "philadelphiaSemi": {
-      "price": 11784.214,
+      "price": 11783.301,
       "prevClose": 11992.463,
-      "change": -208.2489999999998,
-      "changeRate": -1.7364989994132132
+      "change": -209.16200000000026,
+      "changeRate": -1.7441121144171992
     }
   },
   "rates": {
     "krTreasury3y": null,
     "krTreasury10y": null,
     "usTreasury10y": {
-      "price": 0.466,
+      "price": 0.4657,
       "prevClose": 0.47060003000000006,
-      "change": -0.004600030000000021,
-      "changeRate": -0.9774818756386439
+      "change": -0.004900030000000033,
+      "changeRate": -1.04123027786463
     },
     "usTreasury30y": {
-      "price": 0.5205,
+      "price": 0.5202,
       "prevClose": 0.5285,
-      "change": -0.008000000000000007,
-      "changeRate": -1.5137180700094621
+      "change": -0.00830000000000002,
+      "changeRate": -1.5704824976348188
     }
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4544.6,
+      "price": 4545,
       "prevClose": 4420.6,
-      "change": 124,
-      "changeRate": 2.805049088359046
+      "change": 124.39999999999964,
+      "changeRate": 2.8140976338053574
     },
     "silver": {
-      "price": 65.67,
+      "price": 65.725,
       "prevClose": 64.037,
-      "change": 1.6329999999999956,
-      "changeRate": 2.5500882302418844
+      "change": 1.6879999999999882,
+      "changeRate": 2.635976076330852
     },
     "wti": {
-      "price": 85.27,
+      "price": 85.36,
       "prevClose": 84.06,
-      "change": 1.2099999999999937,
-      "changeRate": 1.4394480133238088
+      "change": 1.2999999999999972,
+      "changeRate": 1.5465143944801298
     },
     "brent": {
-      "price": 92.22,
+      "price": 92.36,
       "prevClose": 91.02,
-      "change": 1.2000000000000028,
-      "changeRate": 1.3183915622940043
+      "change": 1.3400000000000034,
+      "changeRate": 1.4722039112283054
     },
     "dxy": {
-      "price": 98.886,
+      "price": 98.891,
       "prevClose": 99.657,
-      "change": -0.7710000000000008,
-      "changeRate": -0.7736536319576154
+      "change": -0.7659999999999911,
+      "changeRate": -0.7686364229306433
     },
     "usdkrw": {
-      "price": 1388.58,
+      "price": 1388.67,
       "prevClose": 1412.26,
-      "change": -23.680000000000064,
-      "changeRate": -1.6767450752694308
+      "change": -23.589999999999918,
+      "changeRate": -1.670372311047535
     }
   },
   "volatilityCrypto": {
     "vix": {
-      "price": 15.2,
+      "price": 15.21,
       "prevClose": 15.84,
-      "change": -0.6400000000000006,
-      "changeRate": -4.040404040404044
+      "change": -0.629999999999999,
+      "changeRate": -3.977272727272721
     },
     "btc": {
-      "price": 68511,
-      "changeRate": 5.687717068702892
+      "price": 68470,
+      "changeRate": 5.612924867857614
     },
     "eth": {
-      "price": 2082.49,
-      "changeRate": 8.635121315066804
+      "price": 2082.9,
+      "changeRate": 8.649618003839333
     }
   }
 }
