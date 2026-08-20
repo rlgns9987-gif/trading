@@ -191,7 +191,13 @@ export async function getTopTradingValueStocks(marketCode) {
     }
   );
 
-  return (data.output || []).slice(0, 5).map((o) => ({
+  const rawList = data.output || [];
+  if (rawList[0]) {
+    console.log(`[debug] 거래대금상위(${marketCode}) 첫 항목 필드:`, Object.keys(rawList[0]).join(", "));
+    console.log(`[debug] 거래대금상위(${marketCode}) 첫 항목 값:`, JSON.stringify(rawList[0]));
+  }
+
+  return rawList.slice(0, 5).map((o) => ({
     code: o.mksc_shrn_iscd, // 종목코드 (시간외현재가 조회에 사용)
     name: o.hts_kor_isnm,
     price: Number(o.stck_prpr),
