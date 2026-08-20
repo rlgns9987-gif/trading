@@ -1,55 +1,55 @@
 {
-  "updatedAt": "2026-08-20T20:31:36.122Z",
+  "updatedAt": "2026-08-20T20:32:41.442Z",
   "supply": {
     "kospi": {
       "individual": {
         "netBuy": 0,
-        "vsYesterday": 4635672,
-        "vs20dAvg": -265484.8
+        "vsYesterday": 0,
+        "vs20dAvg": -944612.6
       },
       "institution": {
         "netBuy": 0,
-        "vsYesterday": -1338952,
-        "vs20dAvg": -702064.8
+        "vsYesterday": 0,
+        "vs20dAvg": -69282.4
       },
       "foreign": {
         "netBuy": 0,
-        "vsYesterday": -3472598,
-        "vs20dAvg": 961287.6
+        "vsYesterday": 0,
+        "vs20dAvg": 1029784.2
       }
     },
     "kosdaq": {
       "individual": {
         "netBuy": 0,
-        "vsYesterday": -66361,
-        "vs20dAvg": 241922.2
+        "vsYesterday": 0,
+        "vs20dAvg": 114205.4
       },
       "institution": {
         "netBuy": 0,
-        "vsYesterday": 49950,
-        "vs20dAvg": -197140.8
+        "vsYesterday": 0,
+        "vs20dAvg": -73132
       },
       "foreign": {
         "netBuy": 0,
-        "vsYesterday": 14730,
-        "vs20dAvg": -43317
+        "vsYesterday": 0,
+        "vs20dAvg": -40414.2
       }
     },
     "futures": {
       "individual": {
-        "netBuy": -331135,
-        "vsYesterday": -340688,
-        "vs20dAvg": -5439
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -6507.25
       },
       "institution": {
-        "netBuy": 2204953,
-        "vsYesterday": 552622,
-        "vs20dAvg": 142757.75
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": 79198.25
       },
       "foreign": {
-        "netBuy": -1870413,
-        "vsYesterday": -83931,
-        "vs20dAvg": -120051.75
+        "netBuy": 0,
+        "vsYesterday": 0,
+        "vs20dAvg": -77534.75
       }
     }
   },
@@ -172,16 +172,16 @@
       "changeRate": 1.3629554474284606
     },
     "nasdaq100Futures": {
-      "price": 29275,
+      "price": 29280.25,
       "prevClose": 29512.75,
-      "change": -237.75,
-      "changeRate": -0.8055840272424629
+      "change": -232.5,
+      "changeRate": -0.7877951055052478
     },
     "sp500Futures": {
-      "price": 7661.25,
+      "price": 7661.75,
       "prevClose": 7729,
-      "change": -67.75,
-      "changeRate": -0.8765687669814982
+      "change": -67.25,
+      "changeRate": -0.8700996247897528
     },
     "philadelphiaSemi": {
       "price": 11800.019,
@@ -216,10 +216,10 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4578.2,
+      "price": 4577.5,
       "prevClose": 4545.3,
-      "change": 32.899999999999636,
-      "changeRate": 0.7238246100367332
+      "change": 32.19999999999982,
+      "changeRate": 0.7084240864189342
     },
     "silver": {
       "price": 68.195,
@@ -228,10 +228,10 @@
       "changeRate": 3.600455753892883
     },
     "wti": {
-      "price": 86.49,
+      "price": 86.53,
       "prevClose": 84.39,
-      "change": 2.0999999999999943,
-      "changeRate": 2.4884464984002777
+      "change": 2.1400000000000006,
+      "changeRate": 2.5358454793221954
     },
     "brent": {
       "price": 93.42,
@@ -240,16 +240,16 @@
       "changeRate": 1.9646365422396825
     },
     "dxy": {
-      "price": 98.889,
+      "price": 98.893,
       "prevClose": 98.833,
-      "change": 0.055999999999997385,
-      "changeRate": 0.05666123663148684
+      "change": 0.060000000000002274,
+      "changeRate": 0.06070846781945532
     },
     "usdkrw": {
-      "price": 1393.44,
+      "price": 1393.65,
       "prevClose": 1387.14,
-      "change": 6.2999999999999545,
-      "changeRate": 0.4541718932479745
+      "change": 6.509999999999991,
+      "changeRate": 0.4693109563562431
     }
   },
   "volatilityCrypto": {
@@ -260,12 +260,12 @@
       "changeRate": 7.521826729348563
     },
     "btc": {
-      "price": 72813,
-      "changeRate": 6.011808684183942
+      "price": 72812,
+      "changeRate": 5.95022010113829
     },
     "eth": {
-      "price": 2326.14,
-      "changeRate": 9.429568939126536
+      "price": 2326.11,
+      "changeRate": 9.345405762654082
     }
   }
 }
