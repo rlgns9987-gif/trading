@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T23:35:00.823Z",
+  "updatedAt": "2026-08-20T23:36:06.390Z",
   "supply": {
     "kospi": {
       "individual": {
@@ -61,26 +61,26 @@
         "price": 271000,
         "changeRate": 0,
         "tradingValue": 119240000,
-        "vsYesterday": 30602000,
-        "vs20dAvg": 1497968638480
+        "vsYesterday": 54317600,
+        "vs20dAvg": 1497975009700
       },
       {
         "code": "002990",
         "name": "금호건설",
         "price": 15980,
         "changeRate": 2.11,
-        "tradingValue": 110927200,
-        "vsYesterday": 26496624,
-        "vs20dAvg": 1174911485264.8
+        "tradingValue": 112022700,
+        "vsYesterday": 30602000,
+        "vs20dAvg": 1174912306340
       },
       {
         "code": "064400",
         "name": "LG씨엔에스",
         "price": 73500,
         "changeRate": -0.41,
-        "tradingValue": 100884600,
-        "vsYesterday": 22879100,
-        "vs20dAvg": 300874552780.8
+        "tradingValue": 102434400,
+        "vsYesterday": 26496624,
+        "vs20dAvg": 300875599905.6
       },
       {
         "code": "000660",
@@ -88,8 +88,8 @@
         "price": 1691000,
         "changeRate": 0,
         "tradingValue": 93005000,
-        "vsYesterday": 22800000,
-        "vs20dAvg": 151850516422
+        "vsYesterday": 22879100,
+        "vs20dAvg": 151850865812
       },
       {
         "code": "272210",
@@ -97,8 +97,8 @@
         "price": 75300,
         "changeRate": 0,
         "tradingValue": 52935900,
-        "vsYesterday": 21491400,
-        "vs20dAvg": 148835932444
+        "vsYesterday": 22800000,
+        "vs20dAvg": 148836510854
       }
     ],
     "kosdaq": [
@@ -107,27 +107,27 @@
         "name": "현대무벡스",
         "price": 23950,
         "changeRate": -0.21,
-        "tradingValue": 50352000,
+        "tradingValue": 50400000,
         "vsYesterday": 99010649,
-        "vs20dAvg": 70385973999.8
+        "vs20dAvg": 70387166799.8
       },
       {
         "code": "036930",
         "name": "주성엔지니어링",
         "price": 176100,
         "changeRate": -0.68,
-        "tradingValue": 39006000,
-        "vsYesterday": 95638500,
-        "vs20dAvg": 56124809370
+        "tradingValue": 39183300,
+        "vsYesterday": 95797500,
+        "vs20dAvg": 56125125650
       },
       {
         "code": "477850",
         "name": "마키나락스",
         "price": 27750,
         "changeRate": -0.54,
-        "tradingValue": 36214200,
+        "tradingValue": 36270000,
         "vsYesterday": 67089400,
-        "vs20dAvg": 47217828013
+        "vs20dAvg": 47218631101
       },
       {
         "code": "125490",
@@ -135,17 +135,17 @@
         "price": 12000,
         "changeRate": -0.17,
         "tradingValue": 27501760,
-        "vsYesterday": 43964960,
-        "vs20dAvg": 45108092728
+        "vsYesterday": 57778760,
+        "vs20dAvg": 45112230312
       },
       {
         "code": "483350",
         "name": "딜리셔스",
         "price": 4390,
         "changeRate": 0.11,
-        "tradingValue": 19074750,
+        "tradingValue": 22161790,
         "vsYesterday": 20846540,
-        "vs20dAvg": 36472805966
+        "vs20dAvg": 36473855862
       }
     ]
   },
@@ -172,10 +172,10 @@
       "changeRate": 1.3629554474284606
     },
     "nasdaq100Futures": {
-      "price": 29319.75,
+      "price": 29317.75,
       "prevClose": 29300.5,
-      "change": 19.25,
-      "changeRate": 0.0656985375676183
+      "change": 17.25,
+      "changeRate": 0.058872715482670944
     },
     "sp500Futures": {
       "price": 7668,
@@ -216,10 +216,10 @@
   },
   "commoditiesFx": {
     "gold": {
-      "price": 4584.4,
+      "price": 4584.6,
       "prevClose": 4571.4,
-      "change": 13,
-      "changeRate": 0.2843767773548585
+      "change": 13.200000000000728,
+      "changeRate": 0.2887518046987953
     },
     "silver": {
       "price": 68.37,
@@ -260,12 +260,12 @@
       "changeRate": 7.521826729348563
     },
     "btc": {
-      "price": 73320,
-      "changeRate": 5.832541900387577
+      "price": 73290,
+      "changeRate": 5.846672237523279
     },
     "eth": {
-      "price": 2332.18,
-      "changeRate": 3.80199370191848
+      "price": 2331.47,
+      "changeRate": 3.806488609495445
     }
   }
 }
