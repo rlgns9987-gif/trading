@@ -192,6 +192,7 @@ export async function getTopTradingValueStocks(marketCode) {
   );
 
   return (data.output || []).slice(0, 5).map((o) => ({
+    code: o.mksc_shrn_iscd, // 종목코드 (시간외현재가 조회에 사용)
     name: o.hts_kor_isnm,
     price: Number(o.stck_prpr),
     changeRate: Number(o.prdy_ctrt),
@@ -254,5 +255,61 @@ export async function getKospi200NightFutures() {
     value: Number(o.futs_prpr),
     change: Number(o.futs_prdy_vrss),
     changeRate: Number(o.futs_prdy_ctrt),
+  };
+}
+// ---------------------------------------------------------------------------
+// 8. 개별 종목 시간외현재가 (장후 시간외종가 15:40~16:00 / 시간외단일가 16:00~18:00)
+//    TR_ID: FHPST02300000 / URL: /uapi/domestic-stock/v1/quotations/inquire-overtime-price
+// ---------------------------------------------------------------------------
+export async function getOvertimePrice(code) {
+  const data = await kisGet(
+    "/uapi/domestic-stock/v1/quotations/inquire-overtime-price",
+    "FHPST02300000",
+    { FID_COND_MRKT_DIV_CODE: "J", FID_INPUT_ISCD: code }
+  );
+  const o = data.output || {};
+  const price = Number(o.ovtm_untp_prpr);
+  if (!price) return null;
+  return {
+    price,
+    changeRate: Number(o.ovtm_untp_prdy_ctrt),
+  };
+}
+
+// ---------------------------------------------------------------------------
+// 9. 시장별 투자자매매동향(일별) — 코스피/코스닥의 "그날 확정된" 최종 수급.
+//    장중엔 inquire-time-by-market(실시간성)을 쓰고, 장 마감 후·주말엔 이걸로 대체합니다.
+//    TR_ID: FHPTJ04040000 / URL: /uapi/domestic-stock/v1/quotations/inquire-investor-daily-by-market
+// ---------------------------------------------------------------------------
+const DAILY_MARKET_CODE_MAP = {
+  KOSPI: { iscd: "0001", iscd1: "KSP" },
+  KOSDAQ: { iscd: "1001", iscd1: "KSQ" },
+};
+
+export async function getInvestorDailyByMarket(marketCode, dateStr) {
+  const codes = DAILY_MARKET_CODE_MAP[marketCode];
+  if (!codes) throw new Error(`알 수 없는 marketCode: ${marketCode}`);
+
+  const data = await kisGet(
+    "/uapi/domestic-stock/v1/quotations/inquire-investor-daily-by-market",
+    "FHPTJ04040000",
+    {
+      FID_COND_MRKT_DIV_CODE: "U",
+      FID_INPUT_ISCD: codes.iscd,
+      FID_INPUT_DATE_1: dateStr,
+      FID_INPUT_ISCD_1: codes.iscd1,
+      FID_INPUT_DATE_2: dateStr,
+      FID_INPUT_ISCD_2: codes.iscd,
+    }
+  );
+
+  // output 배열의 첫 항목이 조회일(혹은 그 이전 가장 최근 영업일)의 확정 데이터
+  const o = (data.output || [])[0];
+  if (!o) throw new Error(`${marketCode} 일별 수급 데이터가 없습니다.`);
+
+  return {
+    individual: Number(o.prsn_ntby_tr_pbmn),
+    institution: Number(o.orgn_ntby_tr_pbmn),
+    foreign: Number(o.frgn_ntby_tr_pbmn),
   };
 }
