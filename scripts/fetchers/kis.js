@@ -216,7 +216,7 @@ export async function getKrTreasuryYield(tenor) {
     {
       FID_COND_MRKT_DIV_CODE: "I",
       FID_COND_SCR_DIV_CODE: "20702",
-      FID_DIV_CLS_CODE: "1",
+      FID_DIV_CLS_CODE: "0",
       FID_DIV_CLS_CODE1: "",
     }
   );

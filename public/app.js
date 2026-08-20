@@ -144,9 +144,14 @@ function render(data) {
   }
 }
 
+// Vercel은 코드가 바뀔 때만 배포되고, 데이터는 GitHub Actions가 커밋한 파일을
+// GitHub에서 직접 읽어옵니다. (Vercel은 하루 배포 횟수 제한이 있어, 1분마다
+// 재배포에 의존하면 금방 한도를 초과하게 됩니다.)
+const DATA_URL = "https://raw.githubusercontent.com/rlgns9987-gif/trading/main/public/data/latest.json";
+
 async function load() {
   try {
-    const res = await fetch(`data/latest.json?ts=${Date.now()}`, { cache: "no-store" });
+    const res = await fetch(`${DATA_URL}?ts=${Date.now()}`, { cache: "no-store" });
     if (!res.ok) throw new Error(`데이터 로드 실패: ${res.status}`);
     const data = await res.json();
     render(data);
