@@ -1,38 +1,38 @@
 {
-  "updatedAt": "2026-08-21T06:57:58.391Z",
+  "updatedAt": "2026-08-21T06:59:00.201Z",
   "supply": {
     "kospi": {
       "individual": {
         "netBuy": -1165254,
         "vsYesterday": -2271425,
-        "vs20dAvg": -103799
+        "vs20dAvg": -1288643.75
       },
       "institution": {
         "netBuy": 248207,
         "vsYesterday": -490359,
-        "vs20dAvg": -921564.6
+        "vs20dAvg": -821191.75
       },
       "foreign": {
         "netBuy": -176086,
         "vsYesterday": 1707904,
-        "vs20dAvg": 798117.6
+        "vs20dAvg": 1869743.25
       }
     },
     "kosdaq": {
       "individual": {
         "netBuy": 623473,
         "vsYesterday": 867,
-        "vs20dAvg": 194832.4
+        "vs20dAvg": 261437
       },
       "institution": {
         "netBuy": -346400,
         "vsYesterday": 112400,
-        "vs20dAvg": -152551.4
+        "vs20dAvg": -203161.25
       },
       "foreign": {
         "netBuy": -283604,
         "vsYesterday": -127749,
-        "vs20dAvg": -46323.6
+        "vs20dAvg": -61577
       }
     },
     "futures": {
@@ -62,23 +62,23 @@
         "changeRate": 0,
         "tradingValue": 7682301498750,
         "vsYesterday": 9109593967500,
-        "vs20dAvg": 7582732759700
+        "vs20dAvg": 7582746559700
       },
       {
         "code": "000660",
         "name": "SK하이닉스",
         "price": 1730000,
         "changeRate": 0,
-        "tradingValue": 7384009862500,
-        "vsYesterday": 6960684880500,
-        "vs20dAvg": 6012587612550
+        "tradingValue": 7384023702500,
+        "vsYesterday": 6960702495500,
+        "vs20dAvg": 6014559938650
       },
       {
         "code": "005935",
         "name": "삼성전자우",
         "price": 207000,
         "changeRate": 0,
-        "tradingValue": 2114640372250,
+        "tradingValue": 2114673078250,
         "vsYesterday": 1062812185000,
         "vs20dAvg": 1327084735500
       },
@@ -97,8 +97,8 @@
         "price": 1123000,
         "changeRate": 0,
         "tradingValue": 670756079000,
-        "vsYesterday": 674305533150,
-        "vs20dAvg": 685544506010
+        "vsYesterday": 674464993950,
+        "vs20dAvg": 685578889270
       }
     ],
     "kosdaq": [
@@ -107,9 +107,9 @@
         "name": "기도산업",
         "price": 18580,
         "changeRate": 0,
-        "tradingValue": 211633436430,
+        "tradingValue": 211646981250,
         "vsYesterday": 336680372750,
-        "vs20dAvg": 344767396295
+        "vs20dAvg": 344803675375
       },
       {
         "code": "196170",
@@ -117,17 +117,17 @@
         "price": 320000,
         "changeRate": 0,
         "tradingValue": 156201298750,
-        "vsYesterday": 251467769800,
-        "vs20dAvg": 268142952740.6
+        "vsYesterday": 251471993800,
+        "vs20dAvg": 268145714390.6
       },
       {
         "code": "347850",
         "name": "디앤디파마텍",
         "price": 53300,
         "changeRate": 0,
-        "tradingValue": 145898529150,
+        "tradingValue": 145898955550,
         "vsYesterday": 156810328850,
-        "vs20dAvg": 215010288527
+        "vs20dAvg": 215016028207
       },
       {
         "code": "025980",
@@ -135,17 +135,17 @@
         "price": 5510,
         "changeRate": 0,
         "tradingValue": 145866418610,
-        "vsYesterday": 138757030850,
-        "vs20dAvg": 196587951555
+        "vsYesterday": 138767314250,
+        "vs20dAvg": 196590265955
       },
       {
         "code": "036930",
         "name": "주성엔지니어링",
         "price": 168600,
         "changeRate": 0,
-        "tradingValue": 134831208850,
-        "vsYesterday": 89908520690,
-        "vs20dAvg": 148802716870
+        "tradingValue": 134832051850,
+        "vsYesterday": 89915145230,
+        "vs20dAvg": 148804041778
       }
     ]
   },
@@ -172,16 +172,16 @@
       "changeRate": -0.3026875812010716
     },
     "nasdaq100Futures": {
-      "price": 29369.25,
+      "price": 29368.5,
       "prevClose": 29300.5,
-      "change": 68.75,
-      "changeRate": 0.23463763417006536
+      "change": 68,
+      "changeRate": 0.23207795088821012
     },
     "sp500Futures": {
-      "price": 7669.75,
+      "price": 7669.5,
       "prevClose": 7662.5,
-      "change": 7.25,
-      "changeRate": 0.09461663947797716
+      "change": 7,
+      "changeRate": 0.09135399673735727
     },
     "philadelphiaSemi": {
       "price": 11800.019,
@@ -222,34 +222,34 @@
       "changeRate": 1.0806317539484742
     },
     "silver": {
-      "price": 68.945,
+      "price": 68.915,
       "prevClose": 68.105,
-      "change": 0.8399999999999892,
-      "changeRate": 1.233389618970691
+      "change": 0.8100000000000023,
+      "changeRate": 1.1893399897217565
     },
     "wti": {
-      "price": 86.34,
+      "price": 86.36,
       "prevClose": 86.83,
-      "change": -0.4899999999999949,
-      "changeRate": -0.5643210871818437
+      "change": -0.46999999999999886,
+      "changeRate": -0.5412875734193239
     },
     "brent": {
-      "price": 93.46,
+      "price": 93.41,
       "prevClose": 93.78,
-      "change": -0.3200000000000074,
-      "changeRate": -0.34122414160802667
+      "change": -0.37000000000000455,
+      "changeRate": -0.3945404137342765
     },
     "dxy": {
-      "price": 98.752,
+      "price": 98.743,
       "prevClose": 98.895,
-      "change": -0.14300000000000068,
-      "changeRate": -0.14459780575357772
+      "change": -0.15200000000000102,
+      "changeRate": -0.15369836695485214
     },
     "usdkrw": {
-      "price": 1385.01,
+      "price": 1385.04,
       "prevClose": 1393.74,
-      "change": -8.730000000000018,
-      "changeRate": -0.6263722071548509
+      "change": -8.700000000000045,
+      "changeRate": -0.6242197253433241
     }
   },
   "volatilityCrypto": {
@@ -260,12 +260,12 @@
       "changeRate": 7.521826729348563
     },
     "btc": {
-      "price": 75547,
-      "changeRate": 8.23252078707581
+      "price": 75560,
+      "changeRate": 8.242817239179328
     },
     "eth": {
-      "price": 2370.7,
-      "changeRate": 4.842306990618293
+      "price": 2371.4,
+      "changeRate": 4.870842300182266
     }
   }
 }
